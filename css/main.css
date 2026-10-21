@@ -17,9 +17,9 @@ li {
 }
 /* 공통영역 */
 body {
-    height: 1500px;
 }
 .inner {
+  height: 2000px;
   width: 90%;
   max-width: 1280px;
   margin: auto;
@@ -72,7 +72,7 @@ header .inner {
 main {
 }
 main .inner {
-    /* position: relative; */
+  /* position: relative; */
 }
 .banner {
   position: relative;
@@ -129,9 +129,11 @@ main .inner {
 /* icons */
 
 .static-view {
-    position: sticky;
-    z-index: 999;
-    top: 100px;
-    right: 10px;
+  position: sticky;
+  /* z-index: 999; */
+  top: 0;
+  /* right: 10px; */
+  background-color: aqua;
 }
-.icons {}
+.icons {
+}
