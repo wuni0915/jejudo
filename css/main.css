@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+/* 공통영역 */
+body {
+    height: 1500px;
+}
+.inner {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* header */
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+.nav ul {
+  display: flex;
+  position: relative;
+}
+.nav ul li a {
+  padding: 0 20px;
+  font-size: 17px;
+  color: #777;
+}
+.nav ul li a:hover {
+  color: #1d1d1d;
+}
+.nav ul::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+.nav ul:hover::after {
+  width: 100%;
+}
+/* banner */
+main {
+}
+main .inner {
+    /* position: relative; */
+}
+.banner {
+  position: relative;
+  /* height: 750px; */
+  aspect-ratio: 92/55;
+  border-radius: 20px;
+  overflow: hidden;
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* top: -400px; */
+}
+.banner-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 15%;
+  gap: 30px;
+  text-align: right;
+  padding-bottom: 15%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.banner:hover .banner-title {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.banner-title p {
+  font-size: clamp(24px, 2vw, 36px);
+  font-weight: 600;
+}
+
+.banner-btn {
+  text-align: right;
+  border-radius: 50%;
+  width: 20%;
+  max-width: 70px;
+  min-width: 30px;
+  aspect-ratio: 1/1;
+  border: 0 solid #000;
+}
+/* icons */
+
+.static-view {
+    position: sticky;
+    z-index: 999;
+    top: 100px;
+    right: 10px;
+}
+.icons {}
